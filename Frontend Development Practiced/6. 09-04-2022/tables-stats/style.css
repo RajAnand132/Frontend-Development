@@ -1,0 +1,29 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Poppins:wght@200;600&display=swap');
+body{
+    padding: 1.25em;
+    /* font-family: "Poppins","Verdana",sans-serif; */
+    font-family: 'Loved by the King', cursive;
+}
+table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+th{
+    background-color: #215a8e;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+td,th{
+    padding: 1em;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}

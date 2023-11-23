@@ -1,0 +1,125 @@
+:root{
+    --headingcolor:#66BFBF
+}
+body{
+    font-family: 'Merriweather',serif;
+    margin: 0;
+    text-align: center;
+    color: #40514E;
+}
+
+h1{
+    font-family: 'Sacramento',cursive;
+    font-size: 6em;
+    color: var(--headingcolor);
+}
+h2{
+    color: var(--headingcolor);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.top-container{
+    background: #E4F9F5;
+    position: relative;
+    padding: 100px;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+p.intro i{
+    color: red;
+}
+
+.profile img{
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 50%;
+}
+
+h3{
+    color: #11999E;
+    font-family: "Montserrat",sans-serif;
+}
+
+hr{
+    border: dotted lightblue 6px;
+    border-top: none;
+    width: 10%;
+}
+
+a{
+    color: #11999E;
+    font-family: "Montserrat",sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+.middle-container{
+    margin: 100px 0;
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.code-img,.ml-img{
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.netflix-img{
+    width: 20%;
+    float:right;
+    margin-left: 30px;
+}
+
+.contact-message{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.btn:hover{
+    background-color: #30e3cb;
+}
+
+.bottom-container a{
+    color: white;
+}
+
+.btn{
+    background-color: #11cdd4;
+    border-radius: 8px;
+    font-family: 'Montserrat',sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+}

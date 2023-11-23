@@ -1,0 +1,14 @@
+{
+    "firstName":"Raj",
+    "lastName": "Anand",
+    "age": 22,
+    "address": {
+        "street": "1",
+        "locality": "marathalli",
+        "city":"Bengaluru",
+        "state":"Karnataka"
+    },
+    "phone": [
+        9876543210,7894561230
+    ]
+}

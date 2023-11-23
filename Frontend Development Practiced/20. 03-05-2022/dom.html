@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My title</title>
+</head>
+<body>
+    <a href="http://google.com" id="anchor">My link</a>
+    <h1 id="heading">My heading</h1>
+    <p id="intro" class="intro">1</p>
+    <p class="intro">2</p>
+    <p class="intro">3</p>
+    <script>
+        // document.getElementById(id)
+        // document.getElementsByClassName(classname) // multiple elements
+        // document.getElementsByTagName(name) // para, div=>p,div,a
+
+        // element.innerHTML = brand new html content
+        // element.attribute = brand new value
+        // element.style.property = new style
+        // element.setAttribute(attribute,value)
+        document.getElementById("anchor").setAttribute("href","http://Task.com")
+        console.log(document.getElementById("anchor").href)
+        document.getElementById("heading").style.color="#ab1234"
+
+        const element = document.createElement("div")
+        element.innerHTML = "hey there"
+        document.getElementById("heading").appendChild(element)
+
+        element.innerHTML="Normal div"
+        document.body.appendChild(element)
+        // document.createElement(element)
+        // document.appendChild(element)
+        // document.removeChild(element)
+
+        const paraElements = document.getElementsByTagName("p")
+        const paraWithIntroClass = document.querySelectorAll("p#intro")
+        const paraWithIntroID = document.querySelector("p.intro")
+        console.log(paraWithIntroID)
+    </script>
+</body>
+</html>

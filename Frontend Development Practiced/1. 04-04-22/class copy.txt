@@ -1,0 +1,33 @@
+### Class 1 
+
+Introduction
+
+Installation
+- VS Code
+- Git
+
+Replit Introduction
+
+My expectations from the class
+What the class can expect from me
+
+VS Code Extensions
+- Bracket Pair Colorizer 2
+- CSS Peek
+- HTML CSS Support
+- Path Intellisense
+- Prettier
+- Live Server
+
+
+Intro to Web Dev
+
+HTML Basics
+
+
+HTML
+CSS
+Bootstrap
+JavaScript
+React
+Redux

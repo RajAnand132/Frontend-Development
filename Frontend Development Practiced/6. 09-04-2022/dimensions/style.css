@@ -1,0 +1,37 @@
+.lh{
+    width: 400px;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    line-height: 30px; /* height of text */
+    /* height: 100px; */
+    min-height: 30px;
+    max-height: 60px;
+    /* max-height: 100px;
+    min-height: 80px; */
+    /* max-width: 350px; */
+    min-width: 500px;
+}
+
+.scroll{
+    display: block;
+    border: 1px solid red;
+    padding: 5px;
+    margin-top:5px;
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+}
+.auto{
+    display: block;
+    border: 1px solid red;
+    padding: 5px;
+    margin-top:5px;
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+}
+.no-show{
+    visibility: hidden;
+    /* display: none; */
+}

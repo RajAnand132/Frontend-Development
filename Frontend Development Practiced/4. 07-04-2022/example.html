@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!-- Comment -->
+    <style>
+        /* Internal CSS */
+        body{
+            /* background-color: blueviolet; */
+        }
+        *{
+            background-color: aquamarine;
+        }
+        #colored{
+            color:green;
+            text-align: right;
+        }
+        /* h2{
+            text-align: center;
+        } */
+        .center{
+            text-align: center;
+        }
+        /* p{
+            background-color: aqua;
+        } */
+        div p{
+            /* Descendent Selector */
+            background-color: bisque;
+        }
+        .className p{
+            background-color: brown;
+        }
+        .childSelector>p{
+            background-color: green;
+        }
+        div+p{
+            background-color: yellow;
+        }
+        div~p{
+            background-color: pink;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: hotpink;
+        }
+        a:active{
+            color: aqua;
+        }
+        div:hover{
+            background-color: green;
+        }
+        .pseudo-el::first-line{
+            color: red;
+            font-variant: small-caps
+        }
+        .pseudo-el::first-letter{
+            color: blue;
+            font-size: xx-large;
+        }
+        .before-property::after{
+            /* content: url("image.jpg"); */
+        }
+        ::marker{
+            color: red;
+            font-size: xx-large;
+        }
+        p::selection{
+            color: red;
+            background-color: yellow;
+        }
+        a[target]{
+            background-color: yellow;
+        }
+        input[type=text]{
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+        }
+        input[type=button]{
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="colored">Welcome to CSS</h1>
+    <h2 class="center">Hi</h2>
+    <h1>Welcome Back</h1>
+    <h1>Hey there</h1>
+    <h1 class="center">hello</h1>
+
+    <section class="className">
+        <p>First p</p>
+        <p>2nd p</p>
+    </section>
+    <!-- <div>
+        <p>
+            Hi, This is a para
+        </p>
+        <div>
+            <p>Nested Para</p>
+        </div>
+        <p>Second para</p>
+    </div>
+    <p>This is 3rd para</p>
+
+    <div class="childSelector">
+        <p>Para</p>
+        <div>
+            <p>3rd para</p>
+        </div>
+        <p>Another para</p>
+    </div> -->
+
+    <p>Para pre</p>
+    <div>
+        <p>Para1</p>
+        <p>Para2</p>
+    </div>
+    <p>Para 3</p>
+    <p>Para 4</p>
+
+    <a href="http://www.Task.com">Task Job Batch 12</a>
+    <a href="http://www.google.com" target="_blank">Google</a>
+
+    <p>
+        a:hover MUST come after a:link and a:visited in CSS Definition to be effective
+    </p>
+    <p>
+        a:active MUST come after a:hover to be effective
+    </p>
+    <div>
+        Dummy Text - Hover over me
+    </div>
+    <p class="pseudo-el">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    Remember - ::first-line pseduo-element can only be applied to block-level elements
+    <h1 class="before-property">
+        Heading
+    </h1>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    <ol>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+    <form action="" method="get">
+        Firstname:
+        <input type="text" name="Name" value="Raj" size="20">
+        LastName:
+        <input type="text" name="Name" value="Anand" size="20">
+        <input type="button" value="Example Button">
+    </form>
+    <h1 style="color:blue;text-align: center">Inline CSS Example</h1>
+    <p style="color:red">Para</p>
+</body>
+</html>

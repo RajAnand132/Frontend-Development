@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    background: seagreen;
+    margin-bottom: 30px;
+}
+.flex-container>div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}
+.container-1{
+    flex-direction: row;
+}
+.container-2{
+    flex-direction: column;
+}
+.container-3{
+    flex-direction: row-reverse;
+}
+.container-2{
+    flex-direction: column-reverse;
+}
+
+.container-5{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*  all in 1 class */
+.container-6{
+    background: seagreen;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+.container-6>div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}
+/*  done */
+.container-7{
+    justify-content: center;
+}
+.container-8{
+    justify-content: flex-start;
+}
+.container-9{
+    justify-content: flex-end;
+}
+.container-10{
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+.container-10>div{
+    margin-right: 50px;
+}
+.container-11{
+    height: 200px;
+    align-items: center;
+    
+}
+
+.container-12{
+    height: 300px;
+    align-items: baseline;
+}
+
+.container-13{
+    height: 600px;
+    flex-wrap: wrap;
+    align-content:space-between;
+}
+
+.container-14{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.container-14>div{
+    height: 100px;
+}
+
+
+/* Styles for index2.html */
+
+.main{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-1 div{
+    flex-basis: 50px;
+}
+.main-1 div:nth-of-type(2){
+    flex-basis: 100px;
+}
+
+.main-2 div{
+    flex-grow: 1;
+}
+
+.main-3 div{
+    flex-grow: 1;
+}
+.main-3 div:nth-of-type(2){
+    flex-grow: 3;
+}
+
+.main-4 div{
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+.main-4 div:nth-of-type(3){
+    flex-shrink: 3;
+}

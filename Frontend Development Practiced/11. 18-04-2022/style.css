@@ -1,0 +1,7 @@
+.bg-whitesmoke{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+.bg-whitesmoke>div{
+    border: 1px solid gray;
+}

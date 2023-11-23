@@ -1,0 +1,12 @@
+.p1{
+    margin: 15px;
+}
+.p2{
+    margin: 50px 5%;
+    /* 50 px top and bottom margin and 5% left and right margin */
+}
+.p3{
+    margin: 10px 2% -10px auto;
+    border: 1px solid black;
+    /* top, right, bottom and left */
+}

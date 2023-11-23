@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout and Set Interval</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        function myGreeting(){
+            console.log("Hey, good evening")
+
+        }
+
+        // myGreeting()
+        const myTimeout = setTimeout(myGreeting,5000)
+        // setTimeout(()=>{console.log("This will run after 3s")},3000)
+
+        function myStopFunction(){
+            clearTimeout(myTimeout)
+        }
+        myStopFunction()
+        let i=0;
+        function counter(){
+            i++;
+            console.log(i)
+            const timeout = setTimeout(counter,i*1000)
+            // if(i===5){
+            //     clearTimeout(timeout)
+            // }
+        }
+        // console.log("2")
+        setTimeout(counter,1000) // to give the number 1, 1 sec delay
+        // counter()
+
+        // q1 . how can i make number 1 come after 1 seconds and not immediately
+        // console.log("immediate")
+        const interval = setInterval(displayHello,2000)
+
+        function displayHello(){
+            document.getElementById("demo").innerHTML+="Hello "
+            clearInterval(interval)
+        }
+
+        let j=0;
+
+        function counter2(){
+            j++;
+            console.log(j)
+
+        }
+        // setInterval(counter2,1000)
+
+    </script>
+</body>
+</html>

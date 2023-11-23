@@ -1,0 +1,45 @@
+
+.non-responsive{
+    width: 900px;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 800px){
+    .non-responsive{
+        width: 500px;
+        background-color: yellowgreen;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .non-responsive{
+        width: 100%;
+        background-color: blueviolet;
+        color: white;
+        padding: 20px;
+
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    /* float: left; */
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px){
+    .topnav a{
+        width: 100%;
+    }
+}

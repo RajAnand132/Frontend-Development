@@ -1,0 +1,38 @@
+body{
+    background-color: lightgreen;
+}
+
+/* p{
+    font-size: large;
+    background-color: yellow;
+} */
+
+.black,p{
+    color:blue
+}
+/* 
+p{
+    font-size: ;
+} */
+
+.percentage{
+    font-size: 500%;
+}
+
+.word-spacing{
+    word-spacing: 2cm;
+}
+.em-style{
+    font-size: 0.5cm;
+    letter-spacing: 2em;
+}
+
+.colors{
+    /* keyword aqua,black,blue */
+    color: yellow;
+    color: rgb(50, 50, 255);
+    color: rgb(50%, 50%, 50%);
+    color: #46c6ac;
+    color: #42c; /* #4422cc*/
+    color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,6 @@
+.example1{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px 2px grey inset, 10px 15px 10px 5px red;
+    /* first value is the horizontal offset, 2nd is vertical offset */
+}

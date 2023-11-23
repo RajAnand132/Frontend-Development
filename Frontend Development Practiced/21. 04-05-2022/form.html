@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form name="myForm">
+        Name: <input type="text" name="fname">
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+
+    <input type="text" name="email" id="email">
+    <input type="button" value="Save Email" id="emailbtn">
+
+    <script>
+
+        function validateForm(){
+            console.log("calling")
+            let form = document.forms["myForm"]
+            console.log(form)
+            let fnameInput = form["fname"]
+            console.log(fnameInput)
+            let fnameValue = fnameInput.value;
+
+            if(fnameValue==""){
+                alert("Please fill your name")
+            }
+        }
+
+        document.getElementById("emailbtn").addEventListener("click",()=>{
+            console.log(document.getElementById("email").value)
+        })
+        
+        document.getElementById("emailbtn").addEventListener("click",function(){
+            console.log(document.getElementById("email").value)
+        })
+
+        function abc(arg1,arg2){
+            return 5;
+        }
+
+        const abc2 = (arg1,arg2) => {return 5};
+
+        const abc3 = (arg1,arg2) => 5;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const array = [2,4,5,"rd",7]
+
+        // function splits(array){
+            const odd=[],even=[]
+            // array.forEach(function(value,index){
+            //     if(index%2){
+            //         // if index is odd
+
+            //         odd.push(value)
+            //     }else{
+            //         even.push(value)
+            //     }
+            // })
+            array.forEach(splitArr)
+            // 
+                // splitArr(2,0,array)
+                // splitArr(4,1,array)
+                // splitArr(5,2,array)
+                // splitArr("rd",3,array)
+                // splitArr(7,4,array)
+            // 
+            function splitArr(value,index,array1){
+                if(index%2===1){
+                    // if index is odd
+
+                    odd.push(value)
+                }else{
+                    even.push(value)
+                }
+            }
+            // splitArr(5,2)
+            console.log(odd, even)
+        // }
+        // splits(arr)
+
+        const numbers = [45,4,9,16,25]
+
+        let sum = numbers.reduce(myFunction)
+
+        function myFunction(total,value,index,array){
+            // total=total+value;
+            return total+value;
+        }
+        document.write(sum)
+
+        let areAllOver18 = numbers.every(function(value){
+            return value>18
+        })
+        console.log(areAllOver18)
+
+        let someOver18 = numbers.some(function(value){
+            return value>18
+        })
+        console.log(someOver18)
+        // check if all array values pass a test
+
+        const fruits = ["Apple","Orange","Apple","Mango"]
+        let indexOfMango = fruits.indexOf("Mango") // 3
+        let indexOfApple = fruits.indexOf("Apple") // 0
+        let lastIndexOfApple = fruits.lastIndexOf("Apple") // 2
+        let indexOfKiwi = fruits.indexOf("Kiwi") // 
+
+
+        console.log(indexOfMango,indexOfApple,lastIndexOfApple,indexOfKiwi)
+
+        let first = fruits.find(function(value){
+            return value.length>5
+        })
+        console.log(first)
+
+        console.log(fruits.includes("Kiwi"))
+    </script>
+</body>
+</html>

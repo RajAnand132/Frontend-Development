@@ -1,0 +1,55 @@
+.div1{
+    height: 100px;
+    width: 400px;
+    background-color: springgreen;
+    position: relative;
+    bottom: -30px;
+    left: 10px;
+    opacity: 0.5;
+}
+.div2{
+    height: 300px;
+    width: 350px;
+    background-color: pink;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    z-index: -1;
+}
+
+.scene{
+    margin: 5px;
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: block;
+}
+
+.scene img{
+    display: block;
+}
+
+.scene1 .ring{
+    margin-top: -28px;
+}
+.scene1 .duck{
+    position: relative;
+}
+
+.scene4 .kid{
+    position: relative;
+    top: 140px;
+    z-index: 2;
+
+}
+
+.scene4 .ring{
+    position: relative;
+    z-index:1;
+    top: 70px;
+}
+
+.scene4 .water{
+    position: relative;
+}

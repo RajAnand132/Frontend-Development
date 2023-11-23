@@ -1,0 +1,23 @@
+.font-fam1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.font-var{
+    font-variant: small-caps;
+}
+.font-weight{
+    font-weight: 700;
+}
+
+.size{
+    font-size: 20px;
+}
+
+.random-text{
+    font-stretch: ultra-condensed;
+}
+
+.combined{
+    font: small-caps italic bold 15px georgia;
+}

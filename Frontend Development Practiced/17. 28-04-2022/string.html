@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+    <div id="div1">
+
+    </div>
+    <script>
+        const answer1 = "First string"
+        const answer2 = 'Second string'
+
+        let len = answer1.length;
+
+        // Escape character
+        // if I want to have a '' or "" or \ in my string, I should escape it by using \
+        // i.e. use \'string\' instead of 'string', use \"string\" instead of "string"
+        // use 1\\2 instead of 1\2
+        let text = "We are the \"students\" of Task \'batch\' 1\\2"
+        console.log(text)
+
+        let x = "John" //strings are primitive default
+        console.log(typeof(x))
+        let y = new String("John")
+        console.log(typeof(y))
+        console.log(x==y)  // true
+        console.log(x===y) // false
+        let z = new String("John")
+        console.log(y==z) // true
+        console.log(y===z) // FALSE
+
+
+        // const obj1 = { a:"1",b:5}
+        // const obj2 = obj1
+        // obj1===obj2 //true, pointing to the same object
+        // const obj3 = { a:"1",b:5}
+        // obj1===obj3 // false, pointing to same looking object
+
+        let str = "Raj, Banana, Anand"
+        let part = str.slice(7,13)
+        console.log(part) // Banana
+
+        str = "Apple, Banana, Kiwi";
+        part = str.slice(-12,-6) //invalid arg
+        console.log(part)  //Banana
+
+        part = str.slice(-6,-12) //invalid arg
+
+
+        part = str.slice(7) // Banana, Kiwi
+        part = str.slice(-12) //Banana, Kiwi
+
+        part = str.substring(7,13)
+        part = str.substring(-7) // invalid argument
+        console.log(part)
+
+        part = str.substr(7,6) //Banana
+        console.log(part) 
+
+        part = str.substr(7)
+        console.log(part)
+        part = str.substr(-4) // position counts from the end of the string
+
+        let text2 = "the \"students\" of Task \'batch\' 1\\2"
+        console.log(text2.slice(3,15))
+
+        let repText = "Please be here"
+        let newText = repText.replace("here","in delhi")
+        console.log(newText)
+
+        let repText2 = "Please be here here"
+        let newText2 = repText2.replace("here","in delhi")
+
+        let newText3 = repText2.replace(/here/g,"in delhi")
+
+        let repText4 = "Please be here HERE"
+        let newText4 = repText2.replace(/here/gi,"in delhi")
+
+        // => g means all occurrence
+        // => i means one occurrence but case insensitive
+        // gi=> all occurrence and case insensitive
+        console.log(newText4)
+
+        let text3 = "Whats up".concat("syugsd"," dshgsdh ","Hey")
+        console.log(text3)
+
+        let t2 = "5"
+        let padded = t2.padStart(4,"x")
+        let padded2 = t2.padEnd(4,"x")
+        console.log(padded,padded2)
+
+        let nameStatement = "Hey my name is Raj"
+        let nameArr = nameStatement.split(" ")
+        let charArr = nameStatement.split("")
+        let wholeArr = nameStatement.split()
+        console.log(wholeArr)
+
+        let tempLiteral = `THis is a template literal`
+        let tempLiteral2 = `THis "is" a 'template' literal`
+        let tempLiteral3 = `THis "is" a 'template' lit
+        dhduik
+        
+        eral`
+        console.log(tempLiteral3)
+        const myFirstName = "Raj"
+        const mySecondName = "Anand"
+        console.log("My name is "+myFirstName+" "+mySecondName)
+        console.log(`My name is ${myFirstName} ${mySecondName}`) // Variable Substituition
+
+        let price = 10
+        let VAT = 0.25
+        let total = `Total: ${(price *(1+VAT)).toFixed(1)}`
+        console.log(total)
+
+        const heading = "This is a heading"
+        const content = "This is a content"
+
+        document.getElementById("div1").innerHTML = `<h2>${heading}</h2>
+        <p>${content}</p>`
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <!-- A function which promises a result
+    OR
+    A function which promises to return/do something in the future
+    -->
+    <p id="demo"></p>
+
+    <script>
+
+        // defining a promise
+        let myPromise = new Promise(function(myResolve, myReject){
+            // Producing code => this will take some time
+            // Going through a table and finding a user with the given id
+            myResolve() // when successful
+            myReject() // when error
+        })
+        // Consuming code, must wait for a fulfilled promise
+        myPromise.then(
+            function (value){
+                // code if successful
+            },
+            function (error){
+                // code if error
+            }
+        )
+
+        const promiseHello = new Promise(function(resolve,reject){
+            // setTimeout(()=> resolve("Hello"),3000)
+            setTimeout(()=> reject("Promises rejected due to some reasons"),5000)
+
+            // setTimeout(function(){
+            //     resolve("Hello")
+            // },3000)
+
+        })
+
+        // promiseHello.then(function (value){
+        //     document.write(value)
+        // })
+
+        // handling promises
+        promiseHello
+            .then(value=>{
+                document.getElementById("demo").innerHTML="Resolved with "+value;
+            })
+            .catch(err=>{
+                document.getElementById("demo").innerHTML="Rejected with "+err;
+            })
+
+        async function myFunc(){
+            return "hello"
+        }
+        //  same as
+        function myFunc2(){
+            return Promise.resolve("Hello")
+        }
+
+
+
+    </script>
+</body>
+</html>

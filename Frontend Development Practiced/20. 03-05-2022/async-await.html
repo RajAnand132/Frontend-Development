@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        async function myDisplay(){
+            let myPromise = new Promise((resolve,reject)=>{
+                setTimeout(()=>reject("Hey there"),2000)
+            })
+            console.log("before")
+            try{
+                const promiseval = await myPromise // my function stops here for 2 seconds
+                console.log("after")
+                document.getElementById("demo").innerHTML = promiseval
+            }catch(err){
+                console.log("in err")
+            }
+        }
+
+        myDisplay()
+        console.log("post display func")
+    </script>
+</body>
+</html>

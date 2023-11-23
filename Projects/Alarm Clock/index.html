@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <style>
+        .alarmEl{
+            background-color: cyan;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    </style>
+        <link href="https://gdurl.com/9S5r/" rel="icon">
+        <link href="https://gdurl.com/05eD3/" rel="apple-touch-icon">
+</head>
+<body>
+    <div>
+        <label for="time">Set a time & day for your alarm</label>
+        <input type="time" name="time" id="time">
+        <select name="day" id="day">
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+        </select>
+        <input type="submit" id="submit" value="Add alarm">
+        <br>
+        <h1>Alarms</h1>
+        <div id="alarms">
+            No alarms yet
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
